@@ -47,7 +47,7 @@ Response
 
 </p>
 
-<br><br><br>
+
 
 ---
 
@@ -69,7 +69,7 @@ Response
 ### Step 4: Vector Storage
 - FAISS
 
-<br><br><br>
+
 
 ---
 
@@ -79,7 +79,7 @@ Response
 - Semantic Retrieval
 - Context Extraction
 
-<br><br><br>
+
 
 ---
 
@@ -93,7 +93,7 @@ Response
 - No hallucinations  
 - Structured answers  
 - Say "I don't know" if missing info  
-<br><br><br>
+
 
 ---
 
@@ -102,7 +102,7 @@ Response
 - Retrieval Success  
 - Answer Relevance  
 - Grounded Responses  
-
+<br><br><br>
 ---
 
 ## 🚀 Deployment
