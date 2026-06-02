@@ -2,6 +2,8 @@
 
 A Retrieval-Augmented Generation (RAG) system designed to help proposal writers and RFP managers retrieve company knowledge and generate grounded responses from internal documents.
 
+
+
 ---
 
 ## 📌 Project Overview
