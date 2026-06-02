@@ -38,16 +38,20 @@ F --> G[Answer]
 | Vector DB | FAISS |
 | Framework | LangChain |
 
-PDF / DOCX / XLSX
-        ↓
-   Chunking
-        ↓
-   Embeddings
-        ↓
-      FAISS
-        ↓
+<p align="center">
+
+Documents
+<br>↓<br>
+Chunking
+<br>↓<br>
+Embeddings
+<br>↓<br>
+FAISS
+<br>↓<br>
 Similarity Search
-        ↓
- GPT-4o-mini
-        ↓
-    Response
+<br>↓<br>
+GPT-4o-mini
+<br>↓<br>
+Response
+
+</p>
