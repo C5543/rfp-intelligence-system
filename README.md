@@ -1,8 +1,9 @@
-<br><br><br>
+
 
 # RFP Intelligence System (RAG) 📄🤖
 
 A Retrieval-Augmented Generation (RAG) system designed to help proposal writers and RFP managers retrieve company knowledge and generate grounded responses from internal documents.
+<br><br><br>
 
 ---
 
