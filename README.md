@@ -12,6 +12,7 @@ A Retrieval-Augmented Generation (RAG) system designed to help proposal writers 
 This project builds an RFP Intelligence System using Retrieval-Augmented Generation (RAG).
 
 The system ingests company documents, converts them into vector embeddings, stores them in FAISS, retrieves relevant information based on user questions, and generates grounded responses using GPT-4o-mini.
+<br><br><br>
 
 ---
 
@@ -23,7 +24,7 @@ The system ingests company documents, converts them into vector embeddings, stor
 - Generate grounded answers using LLMs
 - Evaluate retrieval and generation quality
 - Deploy the solution through FastAPI
-
+<br><br><br>
 ---
 
 ## 🏗️ Architecture
@@ -46,6 +47,8 @@ Response
 
 </p>
 
+<br><br><br>
+
 ---
 
 ## 📂 Data Processing Pipeline
@@ -66,6 +69,8 @@ Response
 ### Step 4: Vector Storage
 - FAISS
 
+<br><br><br>
+
 ---
 
 ## 🔍 Retrieval Layer
@@ -73,6 +78,8 @@ Response
 - Top-K Similarity Search (k=4)
 - Semantic Retrieval
 - Context Extraction
+
+<br><br><br>
 
 ---
 
@@ -86,6 +93,7 @@ Response
 - No hallucinations  
 - Structured answers  
 - Say "I don't know" if missing info  
+<br><br><br>
 
 ---
 
