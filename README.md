@@ -1,11 +1,6 @@
 # RFP Intelligence System
 
 
-## Demo
-
-![System Demo](demo.png)
-
-
 ## Overview
 
 RFP Intelligence System is an AI-powered application that helps users analyze Request for Proposal (RFP) documents using Retrieval-Augmented Generation (RAG).
