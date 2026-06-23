@@ -1,5 +1,6 @@
 # RFP Intelligence System
 
+![System Demo](./demo.png)
 
 ## Overview
 
