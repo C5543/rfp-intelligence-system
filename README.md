@@ -1,6 +1,8 @@
 # RFP Intelligence System
 
-![System Demo](./demo.png)
+<p align="center">
+  <img src="demo.png" width="350">
+</p>
 
 ## Overview
 
