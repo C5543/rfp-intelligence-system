@@ -1,13 +1,6 @@
 # RFP Intelligence System
 
-<table>
-<tr>
-<td>
-
-<img src="demo.png" width="300">
-
-</td>
-<td>
+<img src="demo.png" width="500">
 
 RFP Intelligence System Demo  
 - Q&A Mode  
