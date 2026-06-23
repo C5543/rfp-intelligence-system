@@ -1,8 +1,8 @@
-# RFP Intelligence System
+# RFP Intelligence System 🚀
 
 <img src="demo.png" width="300">
 
-## Overview
+## Overview 📌
 
 RFP Intelligence System is an AI-powered application that helps users analyze Request for Proposal (RFP) documents using Retrieval-Augmented Generation (RAG).
 
@@ -15,7 +15,7 @@ The system allows users to:
 
 ---
 
-## Project Architecture
+## Project Architecture 🏗️
 
 The system follows a Retrieval-Augmented Generation (RAG) workflow:
 
@@ -59,7 +59,7 @@ Streamlit User Interface
 
 ---
 
-## Technologies Used
+## Technologies Used 💻
 
 ### Programming Language
 
@@ -72,7 +72,7 @@ Streamlit User Interface
 * HuggingFace Embeddings
 * BAAI/bge-small-en-v1.5
 
-### Vector Database
+### Vector Database🗂️
 
 * FAISS
 
@@ -209,7 +209,7 @@ The project includes:
 * Enterprise integrations
 
 ---
-## Prepared By
+## Prepared By 👤
 
 **Cady Almutairi**  
 AI Bootcamp Project
