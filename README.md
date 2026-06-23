@@ -211,9 +211,7 @@ The project includes:
 * Enterprise integrations
 
 ---
-
-## Author
+## Prepared By
 
 Cady Almutairi
-
 AI Bootcamp Project
