@@ -213,5 +213,5 @@ The project includes:
 ---
 ## Prepared By
 
-Cady Almutairi
+**Cady Almutairi**  
 AI Bootcamp Project
