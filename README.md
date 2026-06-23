@@ -1,14 +1,6 @@
 # RFP Intelligence System
 
-<img src="demo.png" width="500">
-
-RFP Intelligence System Demo  
-- Q&A Mode  
-- Bid / No-Bid Mode  
-
-</td>
-</tr>
-</table>
+<img src="demo.png" width="300">
 
 ## Overview
 
