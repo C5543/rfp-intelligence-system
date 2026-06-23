@@ -51,6 +51,31 @@ Response
 
 ---
 
+## Project Structure
+
+rfp_intelligence_system/
+
+├── app.py
+├── main.py
+├── rag_chain.py
+├── bid_decision.py
+├── requirements.txt
+├── faiss_index/
+└── documents/
+
+---
+## Tech Stack
+
+- Python
+- LangChain
+- OpenAI GPT-4o-mini
+- HuggingFace Embeddings
+- FAISS
+- FastAPI
+- Streamlit
+
+  ---
+
 ## 📂 Data Processing Pipeline
 
 ### Step 1: Document Ingestion
@@ -104,7 +129,17 @@ Response
 - Grounded Responses  
 <br><br><br>
 ---
+## Features
 
+- Question & Answer over RFP documents
+- Source document retrieval
+- Semantic search using FAISS
+- Bid / No-Bid recommendation
+- FastAPI backend
+- Streamlit frontend
+  
+  ---
+  
 ## 🚀 Deployment
 
 - FastAPI endpoint: `/ask`
