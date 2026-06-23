@@ -1,58 +1,109 @@
+# RFP Intelligence System
 
+## Overview
 
-# RFP Intelligence System (RAG) 📄🤖
+RFP Intelligence System is an AI-powered application that helps users analyze Request for Proposal (RFP) documents using Retrieval-Augmented Generation (RAG).
 
-A Retrieval-Augmented Generation (RAG) system designed to help proposal writers and RFP managers retrieve company knowledge and generate grounded responses from internal documents.
-<br><br><br>
+The system allows users to:
 
----
-
-## 📌 Project Overview
-
-This project builds an RFP Intelligence System using Retrieval-Augmented Generation (RAG).
-
-The system ingests company documents, converts them into vector embeddings, stores them in FAISS, retrieves relevant information based on user questions, and generates grounded responses using GPT-4o-mini.
-<br><br><br>
+* Ask questions about RFP documents
+* Retrieve relevant information from multiple files
+* View source documents used to generate answers
+* Receive basic Bid / No-Bid recommendations
 
 ---
 
-## 🎯 Objectives
+## Project Architecture
 
-- Ingest internal company documents
-- Build a searchable knowledge base
-- Perform semantic retrieval
-- Generate grounded answers using LLMs
-- Evaluate retrieval and generation quality
-- Deploy the solution through FastAPI
-<br><br><br>
+The system follows a Retrieval-Augmented Generation (RAG) workflow:
+
+Documents (PDF / DOCX / XLSX)
+
+↓
+
+Document Loading
+
+↓
+
+Chunking
+
+↓
+
+Embeddings Generation
+
+↓
+
+FAISS Vector Database
+
+↓
+
+Similarity Search
+
+↓
+
+Context Retrieval
+
+↓
+
+GPT-4o-mini
+
+↓
+
+Generated Response
+
+↓
+
+Streamlit User Interface
+
 ---
 
-## 🏗️ Architecture
+## Technologies Used
 
-<p align="center">
+### Programming Language
 
-PDF / DOCX / XLSX  
-↓  
-Chunking  
-↓  
-Embeddings  
-↓  
-FAISS  
-↓  
-Similarity Search  
-↓  
-GPT-4o-mini  
-↓  
-Response  
+* Python
 
-</p>
+### AI & Machine Learning
 
+* OpenAI GPT-4o-mini
+* LangChain
+* HuggingFace Embeddings
+* BAAI/bge-small-en-v1.5
 
+### Vector Database
+
+* FAISS
+
+### Backend
+
+* FastAPI
+
+### Frontend
+
+* Streamlit
+
+---
+
+## Features
+
+### Q&A Mode
+
+Users can ask questions such as:
+
+* What technical requirements are mentioned?
+* What qualifications are required?
+* What deliverables are expected?
+* What is the submission deadline?
+
+### Bid / No-Bid Mode
+
+Provides a basic recommendation based on the retrieved document content.
 
 ---
 
 ## Project Structure
 
+```text
 rfp_intelligence_system/
 
 ├── app.py
@@ -61,93 +112,104 @@ rfp_intelligence_system/
 ├── bid_decision.py
 ├── requirements.txt
 ├── faiss_index/
-└── documents/
+├── documents/
+└── README.md
+```
 
----
-## Tech Stack
+## Installation
 
-- Python
-- LangChain
-- OpenAI GPT-4o-mini
-- HuggingFace Embeddings
-- FAISS
-- FastAPI
-- Streamlit
+### 1. Create Virtual Environment
 
-  ---
+```bash
+python -m venv .venv
+```
 
-## 📂 Data Processing Pipeline
+### 2. Activate Virtual Environment
 
-### Step 1: Document Ingestion
-- PDF
-- DOCX
-- XLSX
+Windows:
 
-### Step 2: Chunking
-- RecursiveCharacterTextSplitter
-- Chunk Size: 500
-- Chunk Overlap: 100
+```bash
+.venv\Scripts\activate
+```
 
-### Step 3: Embeddings
-- BAAI/bge-small-en-v1.5
+### 3. Install Dependencies
 
-### Step 4: Vector Storage
-- FAISS
+```bash
+pip install -r requirements.txt
+```
 
+### 4. Configure Environment Variables
 
-
----
-
-## 🔍 Retrieval Layer
-
-- Top-K Similarity Search (k=4)
-- Semantic Retrieval
-- Context Extraction
-
-
-
----
-
-## 🤖 Generation Layer
-
-### LLM
-- GPT-4o-mini
-
-### Prompt Rules
-- Use ONLY retrieved context  
-- No hallucinations  
-- Structured answers  
-- Say "I don't know" if missing info  
-
-
----
-
-## 📊 Evaluation
-
-- Retrieval Success  
-- Answer Relevance  
-- Grounded Responses  
-<br><br><br>
----
-## Features
-
-- Question & Answer over RFP documents
-- Source document retrieval
-- Semantic search using FAISS
-- Bid / No-Bid recommendation
-- FastAPI backend
-- Streamlit frontend
-  
-  ---
-  
-## 🚀 Deployment
-
-- FastAPI endpoint: `/ask`
-
----
-
-## 🔐 Environment Variables
+Create a `.env` file and add:
 
 ```env
 OPENAI_API_KEY=your_api_key
 ```
+
+---
+
+## Running the Backend
+
+```bash
+uvicorn main:app --reload
+```
+
+The API will run on:
+
+```text
+http://127.0.0.1:8000
+```
+
+---
+
+## Running the Frontend
+
+Open a new terminal:
+
+```bash
+streamlit run app.py
+```
+
+The application will run on:
+
+```text
+http://localhost:8501
+```
+
+---
+
+## MVP Scope
+
+The project includes:
+
+* Document ingestion
+* Text extraction
+* Chunking
+* Embeddings generation
+* FAISS vector database
+* Semantic retrieval
+* LLM response generation
+* Question answering
+* Basic Bid / No-Bid analysis
+* Streamlit frontend
+* FastAPI backend
+
+---
+
+## Future Improvements
+
+* Advanced Bid / No-Bid scoring
+* Confidence scores
+* Azure deployment
+* Authentication and user management
+* Improved retrieval ranking
+* Analytics dashboard
+* Enterprise integrations
+
+---
+
+## Author
+
+Cady Almutairi
+
+AI Bootcamp Project
